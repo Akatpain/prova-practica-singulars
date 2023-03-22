@@ -1,6 +1,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  background-color: rgb(44, 41, 38);
 }
 
 a {
@@ -85,6 +86,7 @@ a {
   padding: 4rem 1rem;
   display: flex;
   align-items: center;
+  align-content: center;
 }
 
 #side-drawer li {
@@ -99,6 +101,7 @@ a {
 main h1 {
   text-align: center;
   font-size: 3rem;
+  color: rgb(228, 69, 15);
 }
 
 #latest-products {
@@ -112,6 +115,7 @@ main h1 {
   margin: 0;
   padding: 0;
   list-style: none;
+  gap: 1rem;
 }
 
 .food-item {
@@ -133,17 +137,28 @@ main h1 {
 
 .food-item h2 {
   margin: 0 0 1rem 0;
+
 }
 
 .btn {
   background-color: rgb(228, 157, 44);
   color: white;
   border-radius: 4px;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
 }
-
+.btn:hover{
+  background-color: rgb(221, 134, 34);
+}
 @media (max-width: 48rem) {
   .menu-btn {
     display: flex;
+  }
+
+  #main-header nav{
+    display: none;
+  }
+  #side-drawer ul{
+    flex-direction: column;
   }
 
   main h1 {
